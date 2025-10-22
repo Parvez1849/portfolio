@@ -1,9 +1,12 @@
 [build]
-  # Build settings (these match what you set in the UI)
+  # 'base' की ज़रूरत नहीं है क्योंकि आपका कोड Root में है।
+  
+  # बिल्ड कमांड को Root में चलाएँ
   command = "npm run build"
-  publish = "dist"
+  
+  # आपका बिल्ड आउटपुट 'dist' फ़ोल्डर में जाएगा (मान लीजिए कि Create React App या Vite यही करता है)
+  publish = "dist" 
 
-# Set the Node.js version explicitly
-# We are using Node 18 here, which is stable for React/Vite.
+# Node.js का आवश्यक वर्ज़न 18 सेट करें। यह आपकी पिछली build fail होने की समस्या ठीक करेगा।
 [build.environment]
   NODE_VERSION = "18"
