@@ -1,4 +1,3 @@
-
 // src/components/form/HeroStep.jsx
 import React, { useState, useRef } from 'react';
 import FormInput from './FormInput';
@@ -251,6 +250,5 @@ const HeroStep = () => {
     </div>
   );
 };
-
 
 export default HeroStep;
