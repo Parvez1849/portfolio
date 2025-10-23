@@ -201,10 +201,10 @@ const HeroStep = () => {
       {/* --- Cropper Modal --- */}
       {showCropper && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <div className="bg-white p-6 rounded-lg max-w-3xl w-full">
+          <div className="bg-white p-6 rounded-lg max-w-xl w-full">
             <h4 className="text-xl font-semibold mb-4">Crop Your Image</h4>
             {error && <p className="text-red-600 text-sm mb-2">{error}</p>}
-            <div className="max-h-[80vh] overflow-auto mb-4 bg-gray-100 p-2 border rounded"> {/* Added background and border */}
+            <div className="max-h-[60vh] overflow-auto mb-4 bg-gray-100 p-2 border rounded"> {/* Added background and border */}
               <ReactCrop
                 crop={crop}
                 onChange={(pixelCrop, percentCrop) => setCrop(percentCrop)}
@@ -216,7 +216,7 @@ const HeroStep = () => {
                   ref={imgRef}
                   src={imgSrc}
                   alt="Upload preview"
-                  style={{ maxHeight: '80vh', userSelect: 'none' }} // Prevent text selection
+                  style={{ maxHeight: '70vh', userSelect: 'none' }} // Prevent text selection
                   onLoad={onImageLoad} // Set initial crop on load
                 />
               </ReactCrop>
@@ -253,3 +253,4 @@ const HeroStep = () => {
 
 
 export default HeroStep;
+
