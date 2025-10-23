@@ -183,7 +183,7 @@ const HeroStep = () => {
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
           Upload New Profile Image (Cropper will open)
-        </label>
+        </Tabel>
         <input
           type="file"
           accept="image/*" // Accept only image files
