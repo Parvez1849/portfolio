@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "api": "json-server --watch db.json --port 3001"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "axios": "^1.7.2",
+    "firebase": "^12.5.0",
+    "firebaseui": "^6.1.0",
+    "framer-motion": "^12.23.24",
+    "postcss": "^8.4.38",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-firebaseui": "^6.0.0",
+    "react-hook-form": "^7.51.5",
+    "react-icons": "^5.5.0",
+    "react-image-crop": "^11.0.10",
+    "react-router-dom": "^6.23.1",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4"
+  }
+}

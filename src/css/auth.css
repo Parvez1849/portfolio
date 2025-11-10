@@ -1,0 +1,91 @@
+/* src/css/auth.css */
+
+.auth-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #121212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-card {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  width: 350px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+/* ✨ Stylish heading */
+.auth-card h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00bfff, #7f00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(127, 0, 255, 0.3);
+}
+
+.auth-card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.google-btn:hover {
+  background-color: #00bfff;
+  color: #000;
+  border-color: #00bfff;
+  transform: scale(1.03);
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    width: 85%;
+    padding: 25px;
+  }
+
+  .auth-card h2 {
+    font-size: 22px;
+  }
+
+  .google-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+
